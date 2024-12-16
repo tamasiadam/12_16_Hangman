@@ -25,17 +25,20 @@ def easy():
     while life > 0:
         
         tipp = input("Adj meg egy betűt, vagy megoldást: ")
-        if tipp == orszag:
+        
+        if tipp.lower() == orszag.lower():
             print("Gratulálok, nyertél! 🏆")
-        elif tipp in orszag:
+        
+        elif tipp.lower() in orszag.lower():
             jo_tippek.append(tipp)
             print(f"Válaszod helyes, \nRossz válaszok: {rossz_tippek} \nJó válaszok: {jo_tippek}")
             print(ismeretlen)
-        elif tipp not in orszag:
-            rossz_tippek.append(tipp)-
+        
+        elif tipp.lower() not in orszag.lower():
+            rossz_tippek.append(tipp)
             life -= 1
-            print("Megmaradt életed: ", life)
             print(f"Válaszod helytelen, \nRossz válaszok: {rossz_tippek} \n Jó válaszok: {jo_tippek}")
+            print("Megmaradt életed:", life, " 💔")
 
 def kezdes():
     while True:
