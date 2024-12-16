@@ -7,13 +7,24 @@ print("Üdvözöllek az akasztófa játékban!")
         
 
 def easy():
+    life = 7
     orszag_index = random.randint(0, 182)
     orszag = countries[orszag_index]
-    print(orszag_index)
-    
-    tipp = input("Adj meg egy betűt, vagy ")
-    if tipp == orszag:
-        print("Grat nyertél")
+    orszag_ismeretlen = len(orszag)
+    print(orszag)
+    print(f"A kitalálandó ország: \n{orszag_ismeretlen * "_ "}")
+
+
+    jatek = True
+    while jatek == True:
+        
+        tipp = input("Adj meg egy betűt, vagy megoldást: ")
+        if tipp == orszag:
+            print("Gratulálok, nyertél! 🏆")
+        elif tipp in orszag:
+            orszag_ismeretlen.replace(tipp)
+            print()
+            jatek = False
     
 
 def kezdes():
@@ -30,6 +41,5 @@ def kezdes():
             hard()
         else:
             print("Helytelen formátum! ❌")
-            
 
 kezdes()
