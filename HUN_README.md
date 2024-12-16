@@ -38,7 +38,7 @@ Adj hozzá ASCII grafikát az életek vizualizálásához.
 A játék egy előre definiált szókészletből véletlenszerű szót használ.
 
 1. A játék minden indításnál véletlenszerűen választ egy szót.
-2. A játék véletlenszerűen választ egy országot a ***countries-and-capitals.txt*** fájlból.
+2. A játék véletlenszerűen választ egy országot a ***countries*** listából.
 
 ### Különböző szintek
 <img src="pictures/difficulty_levels.jpg" alt="Nehézségi szintek" width="150" height="100"><br>

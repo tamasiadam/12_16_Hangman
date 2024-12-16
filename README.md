@@ -40,7 +40,7 @@ Add ASCII art to visualize lives left.
 The game uses a random word from a pre-defined word collection.
 
 1. The game randomly picks a word at each run.
-2. The game randomly picks a country from ***countries-and-capitals.txt***.
+2. The game randomly picks a country from ***countries*** list.
 
 ### Different levels
 <img src="pictures/difficulty_levels.jpg" alt="Ascii art" width="150" height="100">
