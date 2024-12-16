@@ -6,7 +6,7 @@ countries = get_countries()
 #alsóvonalak különválasztása külön szavaknál
 
 
-print("Üdvözöllek az akasztófa játékban!")
+print("Üdvözöllek az Akasztófa játékban!")
         
 
 def easy():
@@ -14,14 +14,15 @@ def easy():
     jo_tippek = []
     rossz_tippek = []
 
-    orszag_index = random.randint(0, 182)
+    orszag_index = random.randint(0, 182) #182 vagy 183?
     orszag = countries[orszag_index]
     orszag_len = len(orszag)
     ismeretlen = orszag_len * "_ "
 
-    print(orszag)
+    print(f"Az ország: {orszag}")
+    print(f"Hossz: {orszag_len}")
     print(f"A kitalálandó ország: \n{ismeretlen}")
-     
+    
     while life > 0:
         
         tipp = input("Adj meg egy betűt, vagy megoldást: ")
