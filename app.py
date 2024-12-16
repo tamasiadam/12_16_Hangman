@@ -17,12 +17,17 @@ def easy():
     orszag_index = random.randint(0, 182) #182 vagy 183?
     orszag = countries[orszag_index]
     orszag_len = len(orszag)
-    ismeretlen = orszag_len * "_ "
+    ismeretlen = ""
+    for i in orszag:
+        if i == " ":
+            ismeretlen += "   "
+        else:
+            ismeretlen += "_ "
 
     print(f"Az ország: {orszag}")
     print(f"Hossz: {orszag_len}")
     print(f"A kitalálandó ország: \n{ismeretlen}")
-    
+
     while life > 0:
         
         tipp = input("Adj meg egy betűt, vagy megoldást: ")
@@ -40,7 +45,7 @@ def easy():
             life -= 1
             print(f"Válaszod helytelen, \nRossz válaszok: {rossz_tippek} \n Jó válaszok: {jo_tippek}")
             print("Megmaradt életed:", life, " 💔")
-
+        0   
 def kezdes():
     while True:
         jatek_valasztas = int(input("Válassz szintet!\nKönnyű (1)\nKözepes (2)\nNehéz (3)\nVálassz!: "))
