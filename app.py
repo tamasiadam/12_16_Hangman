@@ -1,12 +1,15 @@
 from country_list import get_countries
+import random
 
 countries = get_countries()
 
 print("Üdvözöllek az akasztófa játékban!")
+        
 
 def easy():
-    life == 7
-
+    orszagok = random.randint(countries)
+    print(orszagok)
+    
 def kezdes():
 
     while True:
@@ -23,3 +26,4 @@ def kezdes():
         else:
             print("Helytelen formátum! ❌")
 
+kezdes()
