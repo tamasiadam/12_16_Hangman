@@ -3,29 +3,39 @@ import random
 
 countries = get_countries()
 
+#alsóvonalak különválasztása külön szavaknál
+
+
 print("Üdvözöllek az akasztófa játékban!")
         
 
 def easy():
     life = 7
+    jo_tippek = []
+    rossz_tippek = []
+
     orszag_index = random.randint(0, 182)
     orszag = countries[orszag_index]
-    orszag_ismeretlen = len(orszag)
+    orszag_len = len(orszag)
+    ismeretlen = orszag_len * "_ "
+
     print(orszag)
-    print(f"A kitalálandó ország: \n{orszag_ismeretlen * "_ "}")
-
-
-    jatek = True
-    while jatek == True:
+    print(f"A kitalálandó ország: \n{ismeretlen}")
+     
+    while life > 0:
         
         tipp = input("Adj meg egy betűt, vagy megoldást: ")
         if tipp == orszag:
             print("Gratulálok, nyertél! 🏆")
         elif tipp in orszag:
-            orszag_ismeretlen.replace(tipp)
-            print()
-            jatek = False
-    
+            jo_tippek.append(tipp)
+            print(f"Válaszod helyes, \nRossz válaszok: {rossz_tippek} \nJó válaszok: {jo_tippek}")
+            print(ismeretlen)
+        elif tipp not in orszag:
+            rossz_tippek.append(tipp)-
+            life -= 1
+            print("Megmaradt életed: ", life)
+            print(f"Válaszod helytelen, \nRossz válaszok: {rossz_tippek} \n Jó válaszok: {jo_tippek}")
 
 def kezdes():
     while True:
