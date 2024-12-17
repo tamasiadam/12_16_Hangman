@@ -48,6 +48,7 @@ def easy():
             print(f"Helytelen válasz! ❌\n>Rossz válaszok: {rossz_tippek}\n>Jó válaszok: {jo_tippek}")
             print("Megmaradt életed:", life, " 💔")
 
+
 def kezdes():
     while True:
         jatek_valasztas = int(input("Válassz szintet!\nKönnyű (1)\nKözepes (2)\nNehéz (3)\nVálassz!: "))
