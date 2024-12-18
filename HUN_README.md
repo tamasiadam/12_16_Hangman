@@ -7,15 +7,15 @@
 ### Feladatok
 Készítsd el az akasztófa játék alapvető működését. Használhatsz bármilyen (akár állandó) kitalálandó szót, a hangsúly a találgatás logikáján és a játék befejezésének megvalósításán van.
 
-1. A játék célja, hogy a játékos kitalálja az összes betűt, amely a szóban szerepel.
-2. A játék kezdetén az állapot így néz ki: _ _ _ _ _ _ _ _ (egy aláhúzás minden betű helyett).
+1. A játék célja, hogy a játékos kitalálja az összes betűt, amely a szóban szerepel. ✅
+2. A játék kezdetén az állapot így néz ki: _ _ _ _ _ _ _ _ (egy aláhúzás minden betű helyett). ✅
 3. Az állapot például így jelenik meg: _ u _ _ a _ _, ha az 'u' és az 'a' betűk ki lettek találva. ✅
 4. A játékos találgathat betűket, és ha az adott betű szerepel a szóban, akkor azok felfedésre kerülnek.
 5. Ha a játékos olyan betűt találgat, ami nem szerepel a szóban, akkor elveszít egy életet. ✅
-6. Ha egy betűt már korábban kitaláltak (függetlenül attól, hogy az helyes volt-e vagy sem), akkor a játékos értesítést kap, de más nem történik.
-7. Ha egy találgatás hibás (legyen az új vagy ismételt), a korábban hibásnak talált betűket a játékos láthatja.
+6. Ha egy betűt már korábban kitaláltak (függetlenül attól, hogy az helyes volt-e vagy sem), akkor a játékos értesítést kap, de más nem történik. ✅
+7. Ha egy találgatás hibás (legyen az új vagy ismételt), a korábban hibásnak talált betűket a játékos láthatja. ✅
 8. A játékos akkor nyer, ha az összes betűt kitalálja a szóban.
-9. A játékos akkor veszít, ha a hibás találgatások száma meghaladja az induló élet paramétert (az ismételt találgatások nem számítanak).
+9. A játékos akkor veszít, ha a hibás találgatások száma meghaladja az induló élet paramétert (az ismételt találgatások nem számítanak). ✅
 10. Ha a játékos a 'quit' szót gépeli be, a program elköszön és kilép.
 
 ### Kis- és nagybetű érzékenység
@@ -23,7 +23,7 @@ A játék kis- és nagybetű érzéketlen, de a megjelenítés nagybetű-érzék
 
 1. Mind a kis-, mind a nagybetűk érvényes bemenetek. ✅
 2. A kis- és nagybetűs találgatások ugyanazokat a betűket fedik fel (pl. az 'i' és 'I' egyaránt felfedi az összes 'i'-t a szóban, függetlenül attól, hogy az kis- vagy nagybetűs). ✅
-3. Az ismétlődések ellenőrzésekor a kis- és nagybetűk ugyanúgy viselkednek (pl. ha 'C' után 'c'-t adunk meg, az ismétlésnek számít).
+3. Az ismétlődések ellenőrzésekor a kis- és nagybetűk ugyanúgy viselkednek (pl. ha 'C' után 'c'-t adunk meg, az ismétlésnek számít). ✅
 4. A megjelenítés során azonban a betűk eredeti megjelenési formájukban láthatók (pl. ha sikeresen kitaláljuk az 'i'-t, az India esetében I _ _ i _ a lesz). 
 
 ### Grafika
