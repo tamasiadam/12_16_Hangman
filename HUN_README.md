@@ -44,7 +44,7 @@ A játék egy előre definiált szókészletből véletlenszerű szót használ.
 <img src="pictures/difficulty_levels.jpg" alt="Nehézségi szintek" width="150" height="100"><br>
 A program lehetővé teszi, hogy a játékos különböző szinteken játsszon.
 
-1. A játék a kezdés előtt megkérdezi a játékost, hogy válasszon nehézségi szintet.
+1. A játék a kezdés előtt megkérdezi a játékost, hogy válasszon nehézségi szintet. ✅
 2. A szavak halmaza és az életek száma a kiválasztott szinttől függ.
 
 #### Tipp
