@@ -19,7 +19,7 @@ Készítsd el az akasztófa játék alapvető működését. Használhatsz bárm
 10. Ha a játékos a 'quit' szót gépeli be, a program elköszön és kilép. ✅
 
 ### Kis- és nagybetű érzékenység
-A játék kis- és nagybetű érzéketlen, de a megjelenítés nagybetű-érzékeny.
+A játék kis- és nagybetű érzéketlen, de a megjelenítés nagybetű-érzékeny. ✅
 
 1. Mind a kis-, mind a nagybetűk érvényes bemenetek. ✅
 2. A kis- és nagybetűs találgatások ugyanazokat a betűket fedik fel (pl. az 'i' és 'I' egyaránt felfedi az összes 'i'-t a szóban, függetlenül attól, hogy az kis- vagy nagybetűs). ✅

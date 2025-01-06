@@ -34,16 +34,18 @@ def easy():
             print("Gratulálok, nyertél! 🏆")
             break
 
-        elif tipp.lower() in jo_tippek or rossz_tippek:
+        elif tipp.lower() in jo_tippek or tipp.lower() in rossz_tippek:
             print("Ezt a betűt már próbáltad! ❌")
 
         elif tipp == "quit":
             quit = input("- Kilépés -\nBiztos ki akarsz lépni? (igen/nem)")
             
             if quit == "igen":
+                print("Sikeres kilépés! 👋")
                 break
 
             elif quit == "nem":
+                print("Játék folytatása...")
                 continue
         
         elif tipp.lower() in orszag.lower():
