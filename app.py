@@ -51,7 +51,9 @@ def easy():
         elif tipp.lower() in orszag.lower():
             jo_tippek.append(tipp.lower())
             print(f"Helyes válasz! ✅\n> Rossz válaszok: {rossz_tippek} \n> Jó válaszok: {jo_tippek}")
-            #replace?
+            """for szavak in orszag:
+                
+                ismeretlen.replace("_ ")"""
             #megkeresni hol vannak azok a betűk, ott kicserélni pontosan, ha van többet is akár
             print(ismeretlen)
         
