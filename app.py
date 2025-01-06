@@ -5,7 +5,7 @@ countries = get_countries()
 
 print("Üdvözöllek az Akasztófa játékban!")
 
-orszag_index = random.randint(0, 182) #182 vagy 183?
+orszag_index = random.randint(0, 183)
 orszag = countries[orszag_index]
 orszag_len = len(orszag)
 ismeretlen = ""
