@@ -19,6 +19,7 @@ for i in orszag:
     else:
         ismeretlen += "_ "
 
+
 def easy():
     life = 7
 
@@ -51,11 +52,14 @@ def easy():
         elif tipp.lower() in orszag.lower():
             jo_tippek.append(tipp.lower())
             print(f"Helyes válasz! ✅\n> Rossz válaszok: {rossz_tippek} \n> Jó válaszok: {jo_tippek}")
-            """for szavak in orszag:
-                
-                ismeretlen.replace("_ ")"""
-            #megkeresni hol vannak azok a betűk, ott kicserélni pontosan, ha van többet is akár
-            print(ismeretlen)
+        helyes_tipp = " "
+        for i in range(len(orszag)):
+            if orszag[i] == tipp:
+                    helyes_tipp += tipp + " "
+            else:
+                 helyes_tipp += ismeretlen[i*2] + " "
+        ismeretlen = helyes_tipp   
+        print(ismeretlen)
         
         elif tipp.lower() not in orszag.lower():
             rossz_tippek.append(tipp.lower())
