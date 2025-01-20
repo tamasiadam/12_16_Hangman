@@ -38,7 +38,6 @@ def jatek(nehezseg):
         else:
             ismeretlen += "|"
 
-    print(orszag)
     print(f"Az ország hossza: {orszag_len} karakter.")
     print(f"A kitalálandó ország: \n{ismeretlen}")
 
